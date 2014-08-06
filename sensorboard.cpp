@@ -27,7 +27,7 @@ bool SensorBoard::setUltrasonic(int trigger_pin, int echo_pin, SensorPosition po
 	return true;
 }
 
-float SensorBoard::getUltrasonicDistance(SensorPosition position, int number_of_samples)
+data_t SensorBoard::getUltrasonicDistance(SensorPosition position, int number_of_samples)
 {
 	if(position < NUMBER_OF_POSITIONS)
 	{

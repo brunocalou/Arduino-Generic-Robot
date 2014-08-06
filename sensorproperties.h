@@ -26,3 +26,5 @@ enum SensorType
 #define SENSOR_OUT_OF_RANGE		-1
 #define INVALID_POSITION		-2
 #define INVALID_SENSOR			-3
+
+typedef double data_t;

@@ -27,16 +27,16 @@ public:
 
 	long getTimming();
 	long getRawDistance();
-	float getDistance();
+	data_t getDistance();
 
 	void setSystem(DistanceSystem system);
 	void setTimeout(unsigned long timeout=DEFAULT_TIMEOUT);
-	float getRawValue();
+	data_t getRawValue();
 
 private:
 
 	int trigger_pin, echo_pin;
-	float system_conv;
+	data_t system_conv;		//System convertion
 	unsigned long timeout;
 };
 

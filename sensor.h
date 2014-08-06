@@ -7,17 +7,17 @@ class Sensor
 {
 public:
 	Sensor(int samples=10);
-	virtual float getRawValue() = 0;
-	virtual float getMeanValue();
-	virtual float getMeanValue(int samples);
-	virtual void setRange(float minimum, float maximum);
+	virtual data_t getRawValue() = 0;
+	virtual data_t getMeanValue();
+	virtual data_t getMeanValue(int samples);
+	virtual void setRange(data_t minimum, data_t maximum);
 	virtual void setNumberOfSamples(int samples);
 
 
 protected:
 	int samples;
-	float minimum_range;
-	float maximum_range;
+	data_t minimum_range;
+	data_t maximum_range;
 };
 
 #endif

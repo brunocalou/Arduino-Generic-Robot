@@ -1,0 +1,940 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"move",
+				"moveForward"
+			],
+			[
+				"control",
+				"controlboard"
+			],
+			[
+				"num",
+				"number_of_samples"
+			],
+			[
+				"read",
+				"read_sensors"
+			],
+			[
+				"NU",
+				"NULL"
+			],
+			[
+				"get",
+				"getMeanValue"
+			],
+			[
+				"maxi",
+				"maximum"
+			],
+			[
+				"mini",
+				"minimum"
+			],
+			[
+				"pri",
+				"println"
+			],
+			[
+				"US_",
+				"US_GND"
+			],
+			[
+				"us_",
+				"US_VCC"
+			],
+			[
+				"curr",
+				"current_pwm_2"
+			],
+			[
+				"pwm_min",
+				"pwm_min_2"
+			],
+			[
+				"set",
+				"setPWM"
+			],
+			[
+				"R_",
+				"R_MOTOR_2"
+			],
+			[
+				"last",
+				"last_command"
+			],
+			[
+				"a",
+				"autonomous"
+			],
+			[
+				"L",
+				"L_MOTOR_2"
+			],
+			[
+				"R",
+				"R_ENABLE"
+			],
+			[
+				"setR",
+				"setRPWM"
+			],
+			[
+				"st",
+				"stop"
+			],
+			[
+				"l",
+				"l_motor_1"
+			],
+			[
+				"en",
+				"enable"
+			],
+			[
+				"in",
+				"input_2"
+			],
+			[
+				"input",
+				"input_1"
+			],
+			[
+				"vcc",
+				"vcc_ref"
+			],
+			[
+				"r",
+				"r_enable"
+			],
+			[
+				"v",
+				"vcc_ref"
+			],
+			[
+				"l_",
+				"l_motor_2"
+			],
+			[
+				"r_",
+				"r_motor_2"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "duodriver.h",
+			"settings":
+			{
+				"buffer_size": 398,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "robot.h",
+			"settings":
+			{
+				"buffer_size": 401,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sensorboard.h",
+			"settings":
+			{
+				"buffer_size": 460,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "controlboard.h",
+			"settings":
+			{
+				"buffer_size": 1538,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sensor.h",
+			"settings":
+			{
+				"buffer_size": 403,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "simpledriver.h",
+			"settings":
+			{
+				"buffer_size": 664,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ultrasonic.h",
+			"settings":
+			{
+				"buffer_size": 630,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sensorproperties.h",
+			"settings":
+			{
+				"buffer_size": 377,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Robot_2_0.ino",
+			"settings":
+			{
+				"buffer_size": 2238,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "robot.cpp",
+			"settings":
+			{
+				"buffer_size": 1848,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "duodriver.cpp",
+			"settings":
+			{
+				"buffer_size": 406,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sensorboard.cpp",
+			"settings":
+			{
+				"buffer_size": 1187,
+				"line_ending": "Unix",
+				"name": "#include \"sensorboard.h\""
+			}
+		},
+		{
+			"file": "controlboard.cpp",
+			"settings":
+			{
+				"buffer_size": 4120,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sensor.cpp",
+			"settings":
+			{
+				"buffer_size": 773,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "simpledriver.cpp",
+			"settings":
+			{
+				"buffer_size": 1350,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ultrasonic.cpp",
+			"settings":
+			{
+				"buffer_size": 1194,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/bruno/Desktop/Robot_2_0/filter.h",
+		"/home/bruno/Desktop/Robot_2_0/sensor.cpp",
+		"/home/bruno/Desktop/Robot_2_0/ultrasonic.cpp",
+		"/home/bruno/Desktop/Robot_2_0/robot.cpp",
+		"/home/bruno/Desktop/Robot_2_0/duodriver.cpp",
+		"/home/bruno/Desktop/Robot_2_0/simpledriver.cpp",
+		"/home/bruno/Desktop/Robot_2_0/Robot_2_0.ino",
+		"/home/bruno/Desktop/Robot_2_0/sensor.h",
+		"/home/bruno/Desktop/Robot_2_0/ultrasonic.h",
+		"/home/bruno/Desktop/Robot_2_0/sensorproperties.h",
+		"/home/bruno/Desktop/Robot_2_0/robot.h",
+		"/home/bruno/Desktop/Robot_2_0/duodriver.h",
+		"/home/bruno/Desktop/Robot_2_0/simpledriver.h",
+		"/home/bruno/.cache/.fr-4tsOcS/SharpIR/SharpIR.cpp",
+		"/home/bruno/Desktop/tt.cpp",
+		"/home/bruno/Desktop/tt.h",
+		"/home/bruno/Desktop/teste.cpp",
+		"/media/bruno/48E6ED18E6ED06D2/Dropbox/Programacao/C++/Projeto_Robo/Arduino Code/sketch_dec07a/sketch_dec07a.ino",
+		"/home/bruno/Desktop/Robot_2.0/Utils/ultrasonic.h",
+		"/home/bruno/Desktop/Robot_2.0/Utils/simpledriver.h",
+		"/home/bruno/Desktop/Robot_2.0/Utils/robot.h",
+		"/home/bruno/Desktop/Robot_2.0/Utils/duodriver.h",
+		"/home/bruno/Desktop/Robot_2.0/Utils/simpledriver.cpp",
+		"/home/bruno/Desktop/Robot_2.0/Utils/duodriver.cpp",
+		"/home/bruno/Desktop/Robot_2.0/Utils/robot.cpp",
+		"/home/bruno/Desktop/Robot_2.0_BACKUP/Robot_2.0.ino",
+		"/home/bruno/Desktop/Robot_2.0/Robot_2.0.ino",
+		"/home/bruno/Desktop/Robot_2.0/robot.cpp",
+		"/home/bruno/Desktop/Robot_2.0/duodriver.cpp",
+		"/home/bruno/Desktop/Robot_2.0/ultrasonic.h",
+		"/home/bruno/Desktop/Robot_2.0/robot.h",
+		"/home/bruno/Desktop/Robot_2.0/duodriver.h",
+		"/home/bruno/Desktop/Robot_2.0/simpledriver.cpp",
+		"/home/bruno/Desktop/Robot_2.0/simpledriver.h",
+		"/home/bruno/Desktop/Robot_2.0/Robot.ino",
+		"/media/bruno/48E6ED18E6ED06D2/Dropbox/Programacao/C++/Projeto_Robo/Arduino Code/Robot/Adapted Robot/Adapted Robot.ino",
+		"/home/bruno/Desktop/Robot_2.0/motor.h",
+		"/home/bruno/Desktop/Robot_2.0/motordriver.cpp",
+		"/home/bruno/Desktop/Robot_2.0/motordriver.h",
+		"/home/bruno/Desktop/Robot_2.0/Ultrasonic.h",
+		"/home/bruno/Desktop/Robot_2.0/MotorDriver.h",
+		"/home/bruno/Desktop/Robot_2.0/Robot.h",
+		"/media/bruno/48E6ED18E6ED06D2/Dropbox/Programacao/C++/Qt5/Trekking/Arduino/Sensors/sensors_code/ultrasonic.h",
+		"/media/bruno/48E6ED18E6ED06D2/Dropbox/Programacao/C++/Projeto_Robo/Arduino Code/Robot/Robot.ino",
+		"/home/bruno/Desktop/16_true_type_fonts/16_true_type_fonts.cpp",
+		"/home/bruno/Desktop/Programacao/C++/SDL2/SDL2_test/SDL2_test.c",
+		"/home/bruno/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/bruno/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Robot",
+			"gTextTexture",
+			"SDL_WINDOWPOS_CENTERED"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"SensorBoard",
+			"ControlBoard"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "duodriver.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "robot.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								401,
+								401
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "sensorboard.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 460,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68,
+								68
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "controlboard.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1538,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "sensor.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "simpledriver.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "ultrasonic.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "sensorproperties.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								377,
+								377
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "Robot_2_0.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								451,
+								451
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "robot.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								353,
+								353
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 648.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "duodriver.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 406,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								364,
+								364
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "sensorboard.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								273,
+								273
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"sensorboard.h\"",
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "controlboard.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4049,
+								4049
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2268.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "sensor.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								429,
+								429
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "simpledriver.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "ultrasonic.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1194,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								658,
+								658
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 28.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Robot_Sublime.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"driver",
+				"~/Desktop/Robot_2.0/motordriver.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

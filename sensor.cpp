@@ -6,19 +6,19 @@ Sensor::Sensor(int samples)
 	setRange(0,1000);
 }
 
-float Sensor::getMeanValue()
+data_t Sensor::getMeanValue()
 {
 	return getMeanValue(this->samples);
 }
 
-float Sensor::getMeanValue(int samples)
+data_t Sensor::getMeanValue(int samples)
 {
-	float mean = 0;
+	data_t mean = 0;
 	int used_samples = 0;
 
 	for(int i = 0; i < samples; i++)
 	{
-		float current_value = getRawValue();
+		data_t current_value = getRawValue();
 		if(current_value != SENSOR_OUT_OF_RANGE)
 		{
 			mean += current_value;
@@ -37,7 +37,7 @@ float Sensor::getMeanValue(int samples)
 	return SENSOR_OUT_OF_RANGE;
 }
 
-void Sensor::setRange(float minimum, float maximum)
+void Sensor::setRange(data_t minimum, data_t maximum)
 {
 	minimum_range = minimum;
 	maximum_range = maximum;

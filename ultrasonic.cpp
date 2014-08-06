@@ -43,7 +43,7 @@ long Ultrasonic::getRawDistance()
 	return distance;
 }
 
-float Ultrasonic::getDistance()
+data_t Ultrasonic::getDistance()
 {
 	return getMeanValue();
 }
@@ -65,7 +65,7 @@ void Ultrasonic::setTimeout(unsigned long timeout)
 	this->timeout = timeout;
 }
 
-float Ultrasonic::getRawValue()
+data_t Ultrasonic::getRawValue()
 {
-	return (float) getRawDistance();
+	return (data_t) getRawDistance();
 }
