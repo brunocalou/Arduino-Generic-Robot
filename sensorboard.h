@@ -2,6 +2,7 @@
 #define SENSORBOARD_H
 
 #include "ultrasonic.h"
+#include "simpleencoder.h"
 
 class SensorBoard
 {
