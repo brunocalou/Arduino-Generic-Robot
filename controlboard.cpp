@@ -147,7 +147,7 @@ void ControlBoard::setSpeed(unsigned int speed)
 	 * it will multiply all the pwms
 	 */
 
-	if(speed > 100) {speed = 100;};
+    if(speed > 100) {speed = 100;}
 	this->speed = speed/100.0;
 }
 

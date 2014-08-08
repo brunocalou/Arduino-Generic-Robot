@@ -5,8 +5,6 @@
 #ifndef ULTRASONIC_H
 #define ULTRASONIC_H
 
-#include <inttypes.h>
-#include <Arduino.h>
 #include "sensor.h"
 
 #define TO_CM					58.2

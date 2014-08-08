@@ -3,6 +3,7 @@
 
 #include "ultrasonic.h"
 #include "simpleencoder.h"
+#include "lightsensor.h"
 
 class SensorBoard
 {

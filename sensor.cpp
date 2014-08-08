@@ -3,7 +3,7 @@
 Sensor::Sensor(int samples)
 {
 	this->samples = samples;
-	setRange(0,1000);
+    setRange(0,1023);
 }
 
 data_t Sensor::getMeanValue()
