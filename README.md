@@ -10,7 +10,7 @@ Version
 Next steps
 =====================
 
--Add light sensor class
+<s>-Add light sensor class</s>
 
 -Add infrared sensor class
 
