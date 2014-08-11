@@ -5,12 +5,12 @@ Arduino libraries made to create robots. The main target is to be useful on almo
 
 Version
 =====================
-0.01
+0.0.1
 
 Next steps
 =====================
 
--Add light sensor class
+<s>-Add light sensor class</s>
 
 -Add infrared sensor class
 
