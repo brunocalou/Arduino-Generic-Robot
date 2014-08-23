@@ -43,3 +43,5 @@ Next steps
 -Add external libraries like MPU-9150, MPU-6050, XBee, Crystal Liquid Display, Ethernet, ...
 
 -Add examples of all classes
+
+-Add smooth mode to Robot class
