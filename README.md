@@ -28,6 +28,10 @@ Next steps
 
 -Add LED class
 
+-Add Timer class
+
+-Implement update method on Robot, LED, SensorBoard and ControlBoard classes
+
 -Implement encoder, light and infrared sensors in the SensorBoard
 
 -Improve Robot example
