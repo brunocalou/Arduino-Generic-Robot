@@ -1,7 +1,7 @@
 #ifndef LIGHTSENSOR_H
 #define LIGHTSENSOR_H
 
-#include "sensor.h"
+#include "../Common/sensor.h"
 
 class LightSensor: public Sensor
 {

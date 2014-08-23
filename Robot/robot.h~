@@ -1,8 +1,8 @@
 #ifndef ROBOT_H
 #define ROBOT_H
 
-#include "controlboard.h"
-#include "sensorboard.h"
+#include "./Driver/controlboard.h"
+#include "./SensorBoard/sensorboard.h"
 
 class Robot: public SensorBoard, public ControlBoard
 {
