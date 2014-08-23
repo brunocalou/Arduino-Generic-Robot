@@ -7,16 +7,17 @@
 #define R_MOTOR_2		6
 #define R_MOTOR_MAX_PWM	255
 
-#define L_ENABLE		9
-#define L_MOTOR_1		11
+#define L_ENABLE		8
+#define L_MOTOR_1		9
 #define L_MOTOR_2		10
 #define L_MOTOR_MAX_PWM	255
 
-#define VCC				12
-
 #define COMMAND_DELAY	500
 
-Robot robot(R_ENABLE,R_MOTOR_1,R_MOTOR_2,L_ENABLE,L_MOTOR_1,L_MOTOR_2,VCC);
+#define US_TRIG			13		//Ultrasonic Trigger
+#define US_ECHO			12		//Ultrasonic Echo
+
+Robot robot(R_ENABLE,R_MOTOR_1,R_MOTOR_2,L_ENABLE,L_MOTOR_1,L_MOTOR_2);
 
 unsigned long timer = 0;		//Stores the time when the last command was received
 
@@ -24,15 +25,6 @@ char command = 'S';
 char last_command = 'S';
 
 bool autonomous = false;		//Stores if the robot is on autonomous mode
-
-////Ultrasonic test////
-
-#define US_VCC		A2
-#define US_TRIG		A4
-#define US_ECHO		A3
-#define US_GND		A5
-
-////////////////////////
 
 //Functions
 void getCommand();
@@ -52,20 +44,13 @@ void setup()
 
 	Serial.begin(BAUD_RATE);
 
-	////////////////Ultrasonic test////////////////
+	robot.setUltrasonic(US_TRIG, US_ECHO, FRONT);	//Set up Ultrasonic sensor
 
-	pinMode(US_VCC, OUTPUT);
-	pinMode(US_GND, OUTPUT);
-	digitalWrite(US_VCC, HIGH);
-	digitalWrite(US_GND, LOW);
-
-	robot.setUltrasonic(US_TRIG, US_ECHO, FRONT);
-
-	///////////////////////////////////////////////
 }
 
 void loop()
 {
+
 	bool read_sensors = true;
 
 	if(Serial.available() > 0)
@@ -108,7 +93,8 @@ void loop()
 	}
 	else if(read_sensors)
 	{
-		Serial.println(robot.getUltrasonicDistance(FRONT, 1));
+		//Not used yet. Must test it
+		//Serial.println(robot.getUltrasonicDistance(FRONT, 1));
 	}
 }
 
