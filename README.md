@@ -10,9 +10,7 @@ Version
 Installation
 =====================
 
--Copy the folder GenericRobot to your arduino libraries path ( ../arduino/libraries )
-
--To use any external library, do the same process with the library folder
+-Copy the all the folders to your arduino libraries path ( ../arduino/libraries )
 
 -You can clone the project and the external libraries by using 
 git clone --recursive git://github.com/brunocalou/Arduino-Generic-Robot
