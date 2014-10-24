@@ -11,7 +11,8 @@ SimpleDriver::SimpleDriver(
 	this->vcc_ref = vcc_ref;
 	this->gnd_ref = gnd_ref;
 
-	setPWM(0,0);
+	pwm_1 = 0;
+	pwm_2 = 0;
 	setMinPWM(0,0);
 
 	setDigitalPin(this->enable, OUTPUT, HIGH);
@@ -19,30 +20,65 @@ SimpleDriver::SimpleDriver(
 	setDigitalPin(this->gnd_ref, OUTPUT, LOW);
 }
 
-void SimpleDriver::setPWM1(byte pwm)
+bool SimpleDriver::setPWM1(byte pwm)
 {
-	pwm_1 = pwm;
-	update();
+	return setPWM(pwm, this->pwm_2);
 }
 
-void SimpleDriver::setPWM2(byte pwm)
+bool SimpleDriver::setPWM2(byte pwm)
 {
-	pwm_2 = pwm;
-	update();
+	return setPWM(this->pwm_1, pwm);
 }
 
-void SimpleDriver::setPWM(byte pwm_1, byte pwm_2)
+bool SimpleDriver::setPWM(byte pwm_1, byte pwm_2)
 {
+	/* If the pwm given is shorter than the minimum pwm
+	 * this method will clamp it to 0
+	 */
+
+	if(pwm_1 <= pwm_min_1)
+	{
+		pwm_1 = 0;
+	}
+
+	if(pwm_2 <= pwm_min_2)
+	{
+		pwm_2 = 0;
+	}
+
+	if(pwm_1 == 0)
+	{
+		/* Writes the low level first to avoid short circuit */
+		analogWrite(input_1, pwm_1);
+		analogWrite(input_2, pwm_2);
+
+	} else if(pwm_2 == 0){
+
+		/* Writes the low level first to avoid short circuit */
+		analogWrite(input_2, pwm_2);
+		analogWrite(input_1, pwm_1);
+	} else {
+		
+		/* If both are non-zero pwms, a short circuit will occur! */
+		return 0;
+	}
+	
+	/* If both pwms are valid, update them */
 	this->pwm_1 = pwm_1;
 	this->pwm_2 = pwm_2;
-	update();
+
+	return 1;
 }
 
 void SimpleDriver::setMinPWM(byte pwm_1, byte pwm_2)
 {
 	this->pwm_min_1 = pwm_1;
 	this->pwm_min_2 = pwm_2;
+	
+	//Updates the pwms
+	setPWM(this->pwm_1, this->pwm_2);
 }
+
 void SimpleDriver::setEnable(bool state)
 {
 	if(enable != UNUSED)
@@ -51,29 +87,9 @@ void SimpleDriver::setEnable(bool state)
 	}
 }
 
-void SimpleDriver::stop()
+bool SimpleDriver::stop()
 {
-	setPWM(0,0);
-}
-
-void SimpleDriver::update()
-{
-	byte current_pwm_1 = pwm_1;
-	byte current_pwm_2 = pwm_2;
-
-	if(pwm_1 <= pwm_min_1)
-	{
-		current_pwm_1 = 0;
-	}
-
-	if(pwm_2 <= pwm_min_2)
-	{
-		current_pwm_2 = 0;
-	}
-
-	analogWrite(input_1, current_pwm_1);
-	analogWrite(input_2, current_pwm_2);
-	
+	return setPWM(0,0);
 }
 
 void SimpleDriver::setDigitalPin(byte pin, bool mode, bool state)

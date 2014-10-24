@@ -17,12 +17,12 @@ public:
 		byte input_1, byte input_2,
 		byte vcc_ref = UNUSED, byte gnd_ref = UNUSED);
 
-	void setPWM1(byte pwm);
-	void setPWM2(byte pwm);
-	void setPWM(byte pwm_1, byte pwm_2);
+	bool setPWM1(byte pwm);
+	bool setPWM2(byte pwm);
+	bool setPWM(byte pwm_1, byte pwm_2);
 	void setMinPWM(byte pwm_1, byte pwm_2);
 	void setEnable(bool state);
-	void stop();
+	bool stop();
 
 private:
 
@@ -34,7 +34,6 @@ private:
 	byte pwm_1, pwm_2;
 	byte pwm_min_1, pwm_min_2;
 
-	void update();
 	void setDigitalPin(byte pin, bool mode, bool state);
 };
 

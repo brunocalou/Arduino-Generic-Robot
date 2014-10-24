@@ -41,7 +41,7 @@ public:
 	virtual void setSpeed(unsigned int speed);
 	virtual void setCurveFactor(byte factor);
 
-private:
+protected:
 	//Driver
 	DuoDriver driver;
 
