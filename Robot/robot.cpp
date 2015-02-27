@@ -9,18 +9,18 @@ Robot::Robot(byte r_enable,
 		byte r_vcc_ref, byte r_gnd_ref,
 		byte l_vcc_ref, byte l_gnd_ref):
 
-	ControlBoard(r_enable, r_motor_1, r_motor_2,
+	SensorBoard(),
+	AutoControlBoard(r_enable, r_motor_1, r_motor_2,
 		l_enable, l_motor_1, l_motor_2,
 		r_vcc_ref, r_gnd_ref,
-		l_vcc_ref, l_gnd_ref),
-	SensorBoard()
+		l_vcc_ref, l_gnd_ref)
 {
 }
 
 void Robot::useCommand(char command)
 {
 	/*
-	 * Theese commands are compatible with this android app
+	 * These commands are compatible with this android app
 	 * https://sites.google.com/site/bluetoothrccar/
 	 * So the robot can be controlled with any android phone 
 	 */

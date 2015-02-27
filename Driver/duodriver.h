@@ -1,10 +1,11 @@
 /*
-	L298 based driverl_
+	L298 based driver
 */
+	
 #ifndef DUODRIVER_H
 #define DUORDRIVER_H
 
-#include "simpledriver.h"
+#include "twoinputsdriver.h"
 
 class DuoDriver
 {
@@ -20,7 +21,7 @@ public:
 		byte r_vcc_ref=UNUSED, byte r_gnd_ref=UNUSED,
 		byte l_vcc_ref=UNUSED, byte l_gnd_ref=UNUSED);
 
-	SimpleDriver	l_motor, r_motor;
+	TwoInputsDriver	l_motor, r_motor;
 	
 	void stop();
 };

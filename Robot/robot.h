@@ -1,10 +1,10 @@
 #ifndef ROBOT_H
 #define ROBOT_H
 
-#include "../Driver/controlboard.h"
+#include "../Driver/autocontrolboard.h"
 #include "../SensorBoard/sensorboard.h"
 
-class Robot: public SensorBoard, public ControlBoard
+class Robot: public SensorBoard, public AutoControlBoard
 {
 
 public:
