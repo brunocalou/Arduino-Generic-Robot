@@ -6,14 +6,16 @@ SimpleEncoder::SimpleEncoder(int pulses_per_rotation)
 	reset();
 }
 
-void SimpleEncoder::add()
+void SimpleEncoder::add(int value)
 {
-	pulses ++;
+	delta_pulses = value;
+	pulses += value;
 }
 
-void SimpleEncoder::subtract()
+void SimpleEncoder::subtract(int value)
 {
-	pulses --;
+	delta_pulses = value;
+	pulses -= value;
 }
 
 void SimpleEncoder::reset()
@@ -24,6 +26,10 @@ void SimpleEncoder::reset()
 long int SimpleEncoder::getPulses()
 {
 	return pulses;
+}
+
+int SimpleEncoder::getDeltaPulses() {
+	return delta_pulses;
 }
 
 void SimpleEncoder::setPulsesPerRotation(int value)

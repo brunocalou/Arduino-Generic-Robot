@@ -26,7 +26,6 @@ void update()
 }
 void setup()
 {
-    Serial.begin(9600);
     attachInterrupt(ENCODER_PIN, update, RISING);
 }
 
