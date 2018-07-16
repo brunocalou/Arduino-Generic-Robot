@@ -6,13 +6,13 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-Robot			KEYWORD1
+Robot	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-useCommand 				KEYWORD2
+useCommand	KEYWORD2
 
 ######################################
 # Instances (KEYWORD2)
